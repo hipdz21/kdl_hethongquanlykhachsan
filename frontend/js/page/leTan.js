@@ -570,7 +570,6 @@ function nhanPhong(idBooking) {
     fetch(url + "/api/get-list-room-by-booking", requestOptions)
         .then(response => response.json())
         .then(result => {
-
             var html = '';
             for (var r of result) {
                 html += `<option value="` + r.roomId + `">Phòng ` + r.roomName + `</option>`

@@ -1,3 +1,10 @@
+if(localStorage.getItem("accountType") == "admin"){
+    window.location.replace("/page/admin.html");
+}
+if(localStorage.getItem("accountType") == "front_desk_staff"){
+    window.location.replace("/page/leTan.html");
+}
+
 function clickSearch() {
     var timeCheckIn = document.querySelector("#timeCheckIn").value;
     var timeCheckOut = document.querySelector("#timeCheckOut").value;
